@@ -11,5 +11,6 @@
 7) Change the value for the 'test' script (inside package.json) to 'jest --watch', which will keep the Jest tests running (like nodemon does for our server)"
 [master c6360b0] Changes the value for the 'test' script (inside package.json) to 'jest --watch', which will execute Jest and also KEEP the Jest tests running (like nodemon does for our server). 
 8) You can now execute Jest with the 'yarn test' command.
-9) Create a new "__tests__" folder in the root directory to store your new tests in. Jest will know to check this folder for tests to run.
-10) Create two new files ("math.js" and "strings.js") inside the "__tests__" folder.
+9) Create a new "__tests__" folder in the root directory to store your new tests in. Jest will check this folder for tests to run. This is one way that Jest will know HOW to identify WHICH tests to execute.
+10) Create two new files ('math.js' and 'strings.js') inside the '__tests__' folder.
+11) Create two new files ('math.test.js' and "math.spec.js') inside the root directory. This is another way that Jest will know HOW to identify WHICH tests to execute---by looking for files with an extension of '.spec.js' or '.test.js'.
