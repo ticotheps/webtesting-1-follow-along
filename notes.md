@@ -28,4 +28,4 @@
 11) Create two new files ('math.test.js' and "math.spec.js') inside the root directory. 
     -This is another way that Jest will know HOW to identify WHICH tests to execute---by looking for files with an extension of '.spec.js' or '.test.js'.
 
-12) Writes a test suite in the 'math.spec.js' file and writes the corresponding functions inside the 'math.js' file.
+12) Write a test suite in the 'math.spec.js' file and write the corresponding functions inside the 'math.js' file.
