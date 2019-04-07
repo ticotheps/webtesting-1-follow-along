@@ -1,3 +1,3 @@
 it('checks equality', () => {
-    expect({ one: 1 }).toBe({ one: 1 });
+    expect({ one: 1 }).toEqual({ one: 1 });
 });
