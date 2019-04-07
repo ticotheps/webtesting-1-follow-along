@@ -21,6 +21,7 @@
 
 9) Create a new "__tests__" folder in the root directory to store your new tests in. Jest will check this folder for tests to run. 
     -This is one way that Jest will know HOW to identify WHICH tests to execute.
+    -Jest will try to execute ANY files in the '__tests__' folder with an extension of '.js'.
 
 10) Create two new files ('math.js' and 'strings.js') inside the '__tests__' folder.
 

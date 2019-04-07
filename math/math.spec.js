@@ -16,14 +16,22 @@ test('adds two numbers correctly', () => {
     expect(math.add(-1, 3)).toBe(2); 
 });
 
+// a test case that expects to THROW an error when passed a string
+it('math.add() should throw an error when passed strings', () => {
+    expect(() => {
+        math.add('3', 2);
+      }).toThrow();
+});
+
 //---------------------------------------------
 
 // What if I passed the following into my function???
 // Would my test cases break? Write them down and TEST them.
+// passing NON-NUMBERS
 // passing strings
 // passing undefined, NaN, null
 // only one argument
-// no arguments
+// no arguments (same as passing 'undefined')
 // objects, arrays, boolean
 // extra arguments
 
