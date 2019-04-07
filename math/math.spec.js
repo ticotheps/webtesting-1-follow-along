@@ -1,4 +1,4 @@
-const { add } = require('./math.js');
+const { add, multiply } = require('./math.js');
 
 // SUT: System Under Test
 // test suite > test cases > assertions > matchers
@@ -26,6 +26,10 @@ it('math.add() should return null when arguments are not numbers', () => {
     expect(add({}, '4')).toBeNull();
     expect(add([], '4')).toBeNull();
     expect(add(NaN, '4')).toBeNull();
+});
+
+it('multiplies two numbers', () => {
+    expect(multiply(3, 4)).toBe(12);
 });
 
 //---------------------------------------------
