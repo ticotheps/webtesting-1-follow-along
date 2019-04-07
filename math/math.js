@@ -1,5 +1,6 @@
 module.exports = {
     add,
+    multiply,
 };
 
 function add(a, b) {
