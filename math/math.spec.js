@@ -5,8 +5,30 @@ const math = require('./math.js');
 
 // test suite = whole file
 
-// a test case (below)
+// example of a test cases (below)
+//---------------------------------------------
+
+// Real-World-Scenario
 // adds two numbers
+test('adds two numbers correctly', () => {
+    expect(math.add(2, 2)).toBe(4); 
+    expect(math.add(1, 3)).toBe(4); 
+    expect(math.add(-1, 3)).toBe(2); 
+});
+
+//---------------------------------------------
+
+// What if I passed the following into my function???
+// Would my test cases break? Write them down and TEST them.
+// passing strings
+// passing undefined, NaN, null
+// only one argument
+// no arguments
+// objects, arrays, boolean
+// extra arguments
+
+//---------------------------------------------
+// Perfect-World-Scenario
 test('adds two numbers', () => {
     // Phase 1: Arrange (setup)
     const expected = 4;
