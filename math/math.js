@@ -1,9 +1,9 @@
-module.exports = {
-    add,
-    multiply,
-};
+// module.exports = {
+//     add,
+//     multiply,
+// };
 
-function add(a, b) {
+exports.add = (a, b) => {
     // Phase 1: Return 'null' FIRST to guarantee that the test CAN fail
     // and that you are testing the intended function.
     // return null; 
@@ -17,9 +17,9 @@ function add(a, b) {
     } else {
         return null;
     }
-}
+};
 
-function multiply(a, b) {
+exports.multiply = (a, b) => {
     return a * b;
-}
+};
 
