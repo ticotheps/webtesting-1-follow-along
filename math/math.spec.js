@@ -17,7 +17,7 @@ test('adds two numbers correctly', () => {
 });
 
 // a test case that expects to THROW an error when passed a string
-it('math.add() should throw an error when passed strings', () => {
+it('math.add() should return null when arguments are not numbers', () => {
     expect(() => {
         math.add('3', 2);
       }).toThrow();

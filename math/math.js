@@ -11,10 +11,10 @@ function add(a, b) {
     // return 4;
 
     // Phase 3: Write the PROPER implementation to make the test pass in all cases.
-    if (typeof a === 'string' || typeof b === 'string') {
-        throw new Error ('Gimme numbers!');
-    } else {
+    if (typeof a === 'number' && typeof b === 'number') {
         return a + b;
+    } else {
+        return null;
     }
 }
 
