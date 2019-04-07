@@ -13,3 +13,21 @@ other interesting matchers
 - .stringContaining() => matches the received value if it is a string that contains the exact expected string
 - .toContain() => checks that an item (or substring) is inside of an array (or another string)
 */
+
+it('repairs to full durability', () => {
+    const item = {
+        name: 'Lambda Shield', 
+        durability: 98,
+        displayName: '[+3] Lambda Shield'
+    };
+
+    const expected = {
+        name: 'Lambda Shield', 
+        durability: 100,
+        displayName: '[+3] Lambda Shield'
+    };
+
+    // Examples for today's project:
+    // expect(enhancer.repair(item)).toEqual(expected)
+    // expected(repair({ durability: 43 }).durability).toBe(100);
+});
