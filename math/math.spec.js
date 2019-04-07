@@ -6,29 +6,33 @@ const { add, multiply } = require('./math.js');
 // test suite = whole file
 
 describe('math.js', () => {
-    // example of a test cases (below)
-    // Real-World-Scenario
-    // adds two numbers
-    test('adds two numbers correctly', () => {
-        expect(add(2, 2)).toBe(4); 
-        expect(add(1, 3)).toBe(4); 
-        expect(add(-1, 3)).toBe(2); 
+    describe('multiply()', () => {
+        // example of a test cases (below)
+        // Real-World-Scenario
+        // adds two numbers
+        test('adds two numbers correctly', () => {
+            expect(add(2, 2)).toBe(4); 
+            expect(add(1, 3)).toBe(4); 
+            expect(add(-1, 3)).toBe(2); 
+        });
+
+        // a test case that expects to THROW an error when passed a string
+        it('math.add() should return null when arguments are not numbers', () => {
+            expect(add()).toBeNull();
+            expect(add(1)).toBeNull();
+            expect(add(null, 1)).toBeNull();
+            expect(add(undefined, 1)).toBeNull();
+            expect(add(3, '4')).toBeNull();
+            expect(add({}, '4')).toBeNull();
+            expect(add([], '4')).toBeNull();
+            expect(add(NaN, '4')).toBeNull();
+        });
     });
 
-    // a test case that expects to THROW an error when passed a string
-    it('math.add() should return null when arguments are not numbers', () => {
-        expect(add()).toBeNull();
-        expect(add(1)).toBeNull();
-        expect(add(null, 1)).toBeNull();
-        expect(add(undefined, 1)).toBeNull();
-        expect(add(3, '4')).toBeNull();
-        expect(add({}, '4')).toBeNull();
-        expect(add([], '4')).toBeNull();
-        expect(add(NaN, '4')).toBeNull();
-    });
-
-    it('multiplies two numbers', () => {
-        expect(multiply(3, 4)).toBe(12);
+    describe('multiply()', () => {
+        it('multiplies two numbers', () => {
+            expect(multiply(3, 4)).toBe(12);
+        });
     });
 
     //---------------------------------------------
