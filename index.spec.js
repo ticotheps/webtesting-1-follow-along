@@ -29,7 +29,7 @@ it('repairs to full durability', () => {
 
     // Examples for today's project:
     // expect(enhancer.repair(item)).toEqual(expected)
-    // expected(repair({ durability: 43 }).durability).toBe(100);
+    // expect(repair({ durability: 43 }).durability).toBe(100);
 });
 
 describe('Asynchronous tests', () => {
