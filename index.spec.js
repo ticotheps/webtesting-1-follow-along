@@ -41,5 +41,9 @@ describe('Asynchronous tests', () => {
     it('async with promises', () => {
         // don't forget the return
         return new Promise(resolve => setTimeout(resolve, 1000));
+    });
+
+    it('async with async/await', async () => {
+        await new Promise(resolve => setTimeout(resolve, 1000));
       });
 });
