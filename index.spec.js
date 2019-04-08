@@ -31,3 +31,10 @@ it('repairs to full durability', () => {
     // expect(enhancer.repair(item)).toEqual(expected)
     // expected(repair({ durability: 43 }).durability).toBe(100);
 });
+
+describe('Asynchronous tests', () => {
+    it('async using callback', done => {
+      // if done is not called, the test will fail
+      setTimeout(done, 3000); // setTimeout will call done after 1s
+    });
+});
