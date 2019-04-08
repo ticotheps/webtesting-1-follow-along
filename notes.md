@@ -14,7 +14,7 @@
 
 6) Run the 'yarn add jest --dev' command in the terminal to install 'jest' as a devDependency.
 
-7) Change the value for the 'test' script (inside package.json) to 'jest --watch', which will keep the Jest tests running (like nodemon does for our server)"
+7) Change the value for the 'test' script (inside package.json) to 'jest --watch --verbose', which will keep the Jest tests running (like nodemon does for our server)"
 [master c6360b0] Changes the value for the 'test' script (inside package.json) to 'jest --watch', which will execute Jest and also KEEP the Jest tests running (like nodemon does for our server). 
 
 8) You can now execute Jest with the 'yarn test' command.
