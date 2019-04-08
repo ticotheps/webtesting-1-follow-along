@@ -37,4 +37,9 @@ describe('Asynchronous tests', () => {
       // if done is not called, the test will fail
       setTimeout(done, 3000); // setTimeout will call done after 1s
     });
+
+    it('async with promises', () => {
+        // don't forget the return
+        return new Promise(resolve => setTimeout(resolve, 1000));
+      });
 });
